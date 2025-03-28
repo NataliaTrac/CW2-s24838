@@ -2,6 +2,7 @@
 
 using CW2_s24838.Models;
 
+/*
 var smallContainer = new LiquidContainer(100, 50, 50, 500, false);
 smallContainer.Load(200);  
 
@@ -27,3 +28,10 @@ catch (Exception ex)
 {
     Console.WriteLine($"Exception caught: {ex.Message}");
 }
+*/
+
+var gas = new GasContainer(250, 180, 130, 800, 4.5);
+gas.Load(600);
+Console.WriteLine($"Before unload: {gas}");
+gas.Unload();
+Console.WriteLine($"After unload: {gas}");
