@@ -38,6 +38,14 @@ public class ContainerShip
         Console.WriteLine($"Loaded {container.SerialNumber} onto {Name}");
 
     }
+    
+    public void LoadContainers(List<Container> containers)
+    {
+        foreach (var container in containers)
+        {
+            LoadContainer(container);
+        }
+    }
 
     public void UnloadContainer(string serialNumber)
     {
